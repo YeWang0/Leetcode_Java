@@ -28,7 +28,7 @@ public class fractionToDecimal {
         }
         result+='.';
         remainder*=10;
-        HashMap<Long,Integer> map=new HashMap<Long, Integer>();
+        HashMap<Long,Integer> map=new HashMap<>();
         while(!map.containsKey(remainder)){
 
             map.put(remainder,result.length());
