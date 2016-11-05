@@ -3,23 +3,7 @@ import java.util.Iterator;
 /**
  * Created by yvan on 8/29/16.
  */
-class Tuple implements Comparable<Tuple> {
-    int x, y, val;
-    public Tuple (int x, int y, int val) {
-        this.x = x;
-        this.y = y;
-        this.val = val;
-    }
 
-    public int getVal() {
-        return val;
-    }
-
-    @Override
-    public int compareTo (Tuple that) {
-        return this.val - that.val;
-    }
-}
 public class kthSmallest {
     int [][] matrix;
     int k;
@@ -58,6 +42,22 @@ public class kthSmallest {
         System.out.print(kt.compare());
     }
 }
+class Tuple implements Comparable<Tuple> {
+    int x, y, val;
+    public Tuple (int x, int y, int val) {
+        this.x = x;
+        this.y = y;
+        this.val = val;
+    }
 
+    public int getVal() {
+        return val;
+    }
+
+    @Override
+    public int compareTo (Tuple that) {
+        return this.val - that.val;
+    }
+}
 //int [][] Matrix={{1,2,3},{2,3,4},{3,4,5}};
 
