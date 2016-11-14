@@ -54,6 +54,7 @@ public class DecodeString2 {
         for(i=0;i<stack.size();i++){
             result.append(stack.get(i));
         }
+
         return result.toString();
     }
 }
